@@ -27,7 +27,7 @@ constexpr bool is_container<
 // Функция вывода всех элементов контейнера в консоль
 template<class T>					// Шаблон
 std::enable_if_t <is_container<T>>	// Органичение использования по типу
-print_list(T& L)
+Print(T& L)
 {
 	std::cout << "{ ";
 	std::for_each(L.begin(), L.end(), [](const T::value_type& elem)

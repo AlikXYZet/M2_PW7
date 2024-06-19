@@ -6,6 +6,8 @@
 #include <string>
 #include <iostream>
 
+#include <array>
+#include <set>
 
 /*---   Шаблон на проверку типа: Является ля контейнером   ---*/
 template<typename, typename = void>

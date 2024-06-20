@@ -32,7 +32,7 @@ std::enable_if_t <is_container<T>>	// Органичение использов�
 Print(T& L)
 {
 	std::cout << "{ ";
-	std::for_each(L.begin(), L.end(), [](const T::value_type& elem)
+	std::for_each(L.begin(), L.end(), [](const typename T::value_type& elem)
 		{
 			std::cout << elem << ' ';
 		});
